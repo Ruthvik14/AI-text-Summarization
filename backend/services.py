@@ -52,7 +52,7 @@ def summarize_text(text: str, summary_type: str, tone: str) -> dict:
 
     try:
         response = client.chat.completions.create(
-            model="gpt-3.5-turbo", # Or gpt-4o if preferred/available
+            model="gpt-3.5-turbo", 
             messages=[
                 {"role": "system", "content": system_msg},
                 {"role": "user", "content": full_user_content}

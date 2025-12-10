@@ -11,9 +11,9 @@ A simple but solid full-stack web application to summarize text, URLs, and docum
 ## Backend Setup (FastAPI)
 
 1.  Navigate to the `backend` directory:
-    
+    ```
     cd backend
-    
+    ```
 
 2.  Create a virtual environment (optional but recommended):
     ```bash

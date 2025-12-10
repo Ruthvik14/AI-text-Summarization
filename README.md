@@ -30,10 +30,9 @@ A simple but solid full-stack web application to summarize text, URLs, and docum
     ```
 
 4.  **Set up your OpenAI API Key**:
-    -   Rename `.env.example` to `.env` inside the `backend` folder.
     -   Open `.env` and paste your key:
         ```bash
-        OPENAI_API_KEY=sk-your-actual-api-key
+        OPENAI_API_KEY="Your Key"
         ```
     -   **Important**: Never commit your `.env` file to version control.
 

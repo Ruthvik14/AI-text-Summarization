@@ -4,7 +4,7 @@ import { FileText, Link, Upload, Sparkles, AlertCircle, Copy, Check } from 'luci
 import { motion, AnimatePresence } from 'framer-motion'
 import './index.css'
 
-// IMPORTANT: In production, use an env var. For this local demo, we assume localhost:8000
+
 const API_BASE_URL = 'http://localhost:8000'
 
 function App() {

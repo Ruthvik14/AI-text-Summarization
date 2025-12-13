@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 
-load_dotenv() # Load environment variables from .env file
+load_dotenv()
 
 import httpx
 from bs4 import BeautifulSoup
@@ -11,14 +11,14 @@ import pypdf
 from docx import Document
 import io
 
-# Initialize OpenAI client
+
 # Ensure OPENAI_API_KEY is set in environment variables
 client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 
 def get_prompt_instructions(summary_type: str, tone: str) -> tuple[str, str]:
     """Returns system message and user instruction based on type and tone."""
     
-    # Base system message
+    
     system_message = "You are an assistant that specializes in summarizing text clearly and concisely."
     
     # Summary type instruction
@@ -83,7 +83,6 @@ async def fetch_url_text(url: str) -> str:
             # Simple content extraction
             soup = BeautifulSoup(resp.content, "html.parser")
             
-            # Remove scripts and styles
             for script in soup(["script", "style", "nav", "footer", "header"]):
                 script.extract()
                 
